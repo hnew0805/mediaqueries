@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Estilos generales*/
+.box{
+  width: 80%;
+  height:80%;
+  background-color: rgb(157, 224, 160);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-style: dotted;
+
+}
+
+.box p{
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 25px;
+ }
+
+/* Media Queries */
+
+/*móvil*/
+@media (max-width: 576px) and (orientation: portrait) {
+  .box{
+    background-color: rgb(223, 236, 240);
+  }
+  .box p{
+
+  font-size: 15px;
+  }
+}
+/*tablet*/
+@media (min-width: 577px) and (max-width:768px;) {
+  .box{
+    background-color: rgb(134, 228, 138);
+  }
+  .box p{
+    font-size: 20px;
+  }
+}
+/*escritorio*/
+@media (min-width: 769px) {
+  .box{
+    background-color: rgb(241, 130, 66);
+  }
+  .box p{
+    font-size: 35px;
+  }
+
+}
